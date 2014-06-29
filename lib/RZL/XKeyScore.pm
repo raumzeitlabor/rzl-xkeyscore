@@ -85,6 +85,8 @@ sub run {
         callback => sub {
             my ($topic, $msg, $d) = @_;
 
+            $dbh->ping;
+
             # filter out blacklisted topics
             if (grep /^$topic/, @{$cfg->{MQTT}->{blacklist}}) {
                 return;
