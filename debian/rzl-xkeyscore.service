@@ -1,0 +1,11 @@
+[Unit]
+Description=RZL daemon logging MQTT topics
+
+[Service]
+User=rzl-xkeyscore
+Restart=always
+Type=forking
+ExecStart=/usr/bin/rzl-xkeyscore
+
+[Install]
+WantedBy=multi-user.target

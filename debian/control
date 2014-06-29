@@ -1,0 +1,17 @@
+Source: rzl-xkeyscore
+Section: perl
+Priority: optional
+Maintainer: Simon Elsbrock <simon@iodev.org>
+Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5)
+Build-Depends-Indep: libmodule-install-perl,
+ perl
+Standards-Version: 3.9.5
+Homepage: https://metacpan.org/release/RZL-XKeyScore
+
+Package: rzl-xkeyscore
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: The great new RZL::XKeyScore!
+ (no description was found)
+ .
+ This description was automagically extracted from the module by dh-make-perl.
