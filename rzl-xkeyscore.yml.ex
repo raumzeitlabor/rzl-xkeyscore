@@ -12,5 +12,6 @@ MQTT: {
   clientid: 'xkeyscore',
   blacklist: [
     '/service/status/presence'
+    '/service/fnordcredit'
   ]
 }
