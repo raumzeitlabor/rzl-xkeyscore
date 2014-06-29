@@ -4,7 +4,7 @@ Description=RZL daemon logging MQTT topics
 [Service]
 User=rzl-xkeyscore
 Restart=always
-Type=forking
+Type=simple
 ExecStart=/usr/bin/rzl-xkeyscore
 
 [Install]
