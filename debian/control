@@ -4,13 +4,15 @@ Priority: optional
 Maintainer: Simon Elsbrock <simon@iodev.org>
 Build-Depends: debhelper (>= 9), dh-systemd (>= 1.5)
 Build-Depends-Indep: libmodule-install-perl,
+ libanyevent-mqtt-perl,
  perl
 Standards-Version: 3.9.5
 Homepage: https://metacpan.org/release/RZL-XKeyScore
 
 Package: rzl-xkeyscore
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}, ${perl:Depends},
+ libanyevent-mqtt-perl
 Description: The great new RZL::XKeyScore!
  (no description was found)
  .
